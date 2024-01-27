@@ -1,9 +1,9 @@
 import AffectedServices from "@/components/Incident/AffectedServices";
 import IncidentEventList from "@/components/Incident/IncidentEventList";
 import Divider from "@/components/Utils/Divider";
+import ViewDate from "@/components/Utils/ViewDate";
 import { IncidentEventType } from "@/types/Incident";
 import { ServerSidePageProps } from "@/types/ServerSidePageProps";
-import { format, formatDistanceToNowStrict } from "date-fns";
 import { Metadata } from "next";
 import Link from "next/link";
 import { FC } from "react";
@@ -65,9 +65,8 @@ const IncidentPage: FC<ServerSidePageProps> = ({ params }) => {
                 {data.title}
             </h1>
             <h6 className="text-sm text-gray-500 dark:text-gray-400 text-center mt-2">
-                Reported{" "}
-                {formatDistanceToNowStrict(data.createdAt, { addSuffix: true })}{" "}
-                - {format(data.createdAt, "MMM d, y H:ii OOOO")}
+                Reported <ViewDate date={data.createdAt} distanceFromNow />
+                , <ViewDate date={data.createdAt} />
             </h6>
 
             <br />

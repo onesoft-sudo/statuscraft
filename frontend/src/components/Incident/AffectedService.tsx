@@ -1,4 +1,4 @@
-import StatusIcon from "@/app/Service/StatusIcon";
+import StatusIcon from "@/components/Service/StatusIcon";
 import { Service } from "@/types/Service";
 import { FC } from "react";
 
