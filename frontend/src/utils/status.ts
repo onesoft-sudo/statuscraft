@@ -5,19 +5,21 @@ import { HiBan } from "react-icons/hi";
 import { HiOutlineWrenchScrewdriver } from "react-icons/hi2";
 import { MdCircle, MdError } from "react-icons/md";
 
-type IconInfo = {
+type StatusInfo = {
     icon: IconType;
     description: string;
+    shortDescription?: string;
     text: string;
     background: string;
     backgroundText: string;
 };
 
-const icons: Record<ServiceStatus, IconInfo> = {
+const statusInfo: Record<ServiceStatus, StatusInfo> = {
     degraded: {
         icon: FaExclamationTriangle,
         description: "Degraded Performance",
-        text: "text-yellow-400",
+        shortDescription: "Degraded",
+        text: "text-yellow-600 dark:text-yellow-400",
         background: "bg-yellow-600",
         backgroundText: "text-white",
     },
@@ -48,7 +50,9 @@ const icons: Record<ServiceStatus, IconInfo> = {
         text: "text-blue-600",
         background: "bg-blue-600",
         backgroundText: "text-white",
+        shortDescription: "Maintenance",
     },
 };
 
-export const getStatusUIMetaInfo = (status: ServiceStatus) => icons[status];
+export const getStatusUIMetaInfo = (status: ServiceStatus) =>
+    statusInfo[status];

@@ -25,6 +25,7 @@ body {
         )
         rgb(var(--background-start-rgb));
     min-height: 100svh;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

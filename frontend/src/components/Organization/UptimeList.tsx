@@ -12,7 +12,7 @@ interface UptimeListProps {
 
 const UptimeList: FC<UptimeListProps> = ({ data }) => {
     return (
-        <div className="border  dark:border-gray-600 rounded-md">
+        <div className="border dark:border-gray-800 dark:bg-gray-900 rounded-md">
             {data.map((info, index) => (
                 <Uptime
                     key={index}

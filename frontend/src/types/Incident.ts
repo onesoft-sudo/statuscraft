@@ -1,3 +1,5 @@
+import { ServiceStatus } from "./Service";
+
 export const IncidentEventType = {
     Investigating: "investigating",
     Identified: "identified",
@@ -13,4 +15,12 @@ export type IncidentEvent = {
     type: IncidentEventType;
     description: string;
     createdAt: Date;
+};
+
+export type Incident = {
+    title: string;
+    resolved: boolean;
+    events: IncidentEvent[];
+    createdAt: Date;
+    highestServiceStatus?: ServiceStatus;
 };

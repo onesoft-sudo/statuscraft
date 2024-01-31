@@ -1,29 +1,14 @@
 import { IncidentEvent, IncidentEventType } from "@/types/Incident";
+import { getEventTypeInfo } from "@/utils/incident";
 import { FC } from "react";
-import { IconType } from "react-icons";
-import {
-    MdBuild,
-    MdCheck,
-    MdLightbulb,
-    MdSearch,
-    MdShield,
-} from "react-icons/md";
 import ViewDate from "../Utils/ViewDate";
 
 interface IncidentEventInfoProps {
     event: IncidentEvent;
 }
 
-const types: Record<IncidentEventType, [string, IconType]> = {
-    deploying_fix: ["Deploying Fix", MdBuild],
-    identified: ["Identified", MdLightbulb],
-    investigating: ["Investigating", MdSearch],
-    resolved: ["Resolved", MdCheck],
-    verifying: ["Verifying", MdShield],
-};
-
 const IncidentEventInfo: FC<IncidentEventInfoProps> = ({ event }) => {
-    const [name, Icon] = types[event.type];
+    const [name, Icon] = getEventTypeInfo(event.type);
 
     return (
         <div className="grid grid-cols-[2fr_5fr] gap-10 max-w-[99svw] lg:max-w-[75svw] xl:max-w-[65svw]">
