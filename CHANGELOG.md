@@ -1,3 +1,13 @@
+# [0.3.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.2.0...v0.3.0) (2024-02-01)
+
+
+### Features
+
+* add redux ([a0cfbfb](https://github.com/onesoft-sudo/statuscraft/commit/a0cfbfbd26813be13f0c344914266b4779518fa4))
+* add redux ([d2ed861](https://github.com/onesoft-sudo/statuscraft/commit/d2ed861565fa874ddd75a85e6660a0e0d42c8d79))
+
+
+
 # [0.2.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.1.0...v0.2.0) (2024-02-01)
 
 
