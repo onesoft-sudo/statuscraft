@@ -5,11 +5,16 @@ import { ConfigModule } from "@nestjs/config";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
-import { IncidentController } from './incident/incident.controller';
+import { AuthModule } from "./auth/auth.module";
+import configuration from "./config/configuration";
+import { IncidentController } from "./incident/incident.controller";
+import { UsersModule } from "./users/users.module";
 
 @Module({
     imports: [
-        ConfigModule.forRoot(),
+        ConfigModule.forRoot({
+            load: [configuration],
+        }),
         TypeOrmModule.forRoot({
             type: "postgres",
             host: process.env.DB_HOST,
@@ -22,6 +27,8 @@ import { IncidentController } from './incident/incident.controller';
             synchronize: !!process.env.DB_AUTO_SYNC,
             logging: !!process.env.DEBUG,
         }),
+        AuthModule,
+        UsersModule,
     ],
     controllers: [AppController, IncidentController],
     providers: [AppService],

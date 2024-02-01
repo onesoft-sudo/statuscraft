@@ -19,6 +19,7 @@ export default class User extends BaseEntity {
 
     @Column({
         type: "text",
+        nullable: true,
     })
     name?: string;
 
@@ -33,12 +34,16 @@ export default class User extends BaseEntity {
     })
     password: string;
 
-    @OneToMany(() => Service, (service) => service.createdBy)
-    services: Service[];
+    @Column({
+        type: "text",
+        nullable: true,
+    })
+    token?: string;
 
-    @JoinTable()
-    @ManyToMany(() => Organization, (organization) => organization.users)
-    organizations: Organization[];
+    @Column({
+        name: "token_created_at",
+    })
+    tokenCreatedAt?: Date;
 
     @CreateDateColumn({
         name: "created_at",
@@ -49,4 +54,11 @@ export default class User extends BaseEntity {
         name: "updated_at",
     })
     updatedAt: Date;
+
+    @OneToMany(() => Service, (service) => service.createdBy)
+    services: Service[];
+
+    @JoinTable()
+    @ManyToMany(() => Organization, (organization) => organization.users)
+    organizations: Organization[];
 }
