@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="z-[100] py-2 px-3 bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(0,0,0,0.6)] backdrop-blur-lg shadow-sm dark:shadow-gray-700 grid grid-cols-[1fr_7fr_1fr] lg:grid-cols-[1.5fr_5fr_1.5fr] sticky top-0 left-0">
+            <nav className="z-[100] py-2 px-3 bg-[rgba(255,255,255,0.8)] dark:bg-[rgba(0,0,0,0.6)] backdrop-blur-lg shadow-sm shadow-gray-200 dark:shadow-gray-700 grid grid-cols-[1fr_7fr_1fr] lg:grid-cols-[1.5fr_5fr_1.5fr] sticky top-0 left-0">
                 {!isDesktop && (
                     <IconButton
                         className="place-self-start text-gray-500 dark:text-white"

@@ -7,8 +7,10 @@ export const metadata: Metadata = {
 
 const LoginPage = () => {
     return (
-        <main>
-            <h1 className="text-xl md:text-2xl lg:text-3xl">Login</h1>
+        <main className="py-5 lg:py-10 bg-gray-50 dark:bg-transparent h-[100%] w-[100svw]">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl text-center">
+                Login
+            </h1>
 
             <LoginForm />
         </main>
