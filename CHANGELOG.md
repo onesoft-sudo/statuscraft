@@ -1,4 +1,13 @@
-# 0.1.0 (2024-01-31)
+# [0.2.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.1.0...v0.2.0) (2024-02-01)
+
+
+### Features
+
+* authentication ([82f21b5](https://github.com/onesoft-sudo/statuscraft/commit/82f21b54b8af9df861a57f166b2dcd3de3b02dbb))
+
+
+
+# [0.1.0](https://github.com/onesoft-sudo/statuscraft/compare/3c5981ac147a4ba31e9afa8653d2db2e9f9845f6...v0.1.0) (2024-01-31)
 
 
 ### Features
