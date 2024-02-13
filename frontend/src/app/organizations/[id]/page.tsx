@@ -38,26 +38,26 @@ const data = {
                 {
                     type: IncidentEventType.Investigating,
                     description: "We're investigating this issue right now.",
-                    createdAt: new Date("2024-01-26T01:34:00+06:00"),
+                    createdAt: new Date("2024-01-26T01:34:00+06:00").toString(),
                 },
                 {
                     type: IncidentEventType.Identified,
                     description: "The cache system seems to be malfunctioning.",
-                    createdAt: new Date("2024-01-26T01:45:00+06:00"),
+                    createdAt: new Date("2024-01-26T01:45:00+06:00").toString(),
                 },
                 {
                     type: IncidentEventType.DeployingFix,
                     description:
                         "We've implemented a new cache system from scratch.",
-                    createdAt: new Date("2024-01-26T01:59:00+06:00"),
+                    createdAt: new Date("2024-01-26T01:59:00+06:00").toString(),
                 },
                 {
                     type: IncidentEventType.Resolved,
                     description: "This incident has been resolved.",
-                    createdAt: new Date("2024-01-26T02:12:00+06:00"),
+                    createdAt: new Date("2024-01-26T02:12:00+06:00").toString(),
                 },
             ],
-            createdAt: new Date("2024-01-26T01:34:00+06:00"),
+            createdAt: new Date("2024-01-26T01:34:00+06:00").toString(),
         },
         {
             title: "HTTPS breakdown",
@@ -67,25 +67,25 @@ const data = {
                 {
                     type: IncidentEventType.Investigating,
                     description: "We're investigating this issue right now.",
-                    createdAt: new Date("2024-01-26T01:34:00+06:00"),
+                    createdAt: new Date("2024-01-26T01:34:00+06:00").toString(),
                 },
                 {
                     type: IncidentEventType.Identified,
                     description: "The 443 port does not seem to be reserved.",
-                    createdAt: new Date("2024-01-26T01:45:00+06:00"),
+                    createdAt: new Date("2024-01-26T01:45:00+06:00").toString(),
                 },
                 {
                     type: IncidentEventType.DeployingFix,
                     description: "We've implemented a fix.",
-                    createdAt: new Date("2024-01-26T01:59:00+06:00"),
+                    createdAt: new Date("2024-01-26T01:59:00+06:00").toString(),
                 },
                 {
                     type: IncidentEventType.Resolved,
                     description: "This incident has been resolved.",
-                    createdAt: new Date("2024-01-26T02:12:00+06:00"),
+                    createdAt: new Date("2024-01-26T02:12:00+06:00").toString(),
                 },
             ],
-            createdAt: new Date("2024-01-26T01:34:00+06:00"),
+            createdAt: new Date("2024-01-26T01:34:00+06:00").toString(),
         },
 
         {
@@ -96,15 +96,15 @@ const data = {
                 {
                     type: IncidentEventType.Investigating,
                     description: "We're investigating this issue right now.",
-                    createdAt: new Date("2024-01-27T01:34:00+06:00"),
+                    createdAt: new Date("2024-01-27T01:34:00+06:00").toString(),
                 },
                 {
                     type: IncidentEventType.Resolved,
                     description: "This incident has been resolved.",
-                    createdAt: new Date("2024-01-26T02:12:00+06:00"),
+                    createdAt: new Date("2024-01-26T02:12:00+06:00").toString(),
                 },
             ],
-            createdAt: new Date("2024-01-27T01:34:00+06:00"),
+            createdAt: new Date("2024-01-27T01:34:00+06:00").toString(),
         },
         {
             title: "HTTPS breakdown 2",
@@ -114,15 +114,15 @@ const data = {
                 {
                     type: IncidentEventType.Investigating,
                     description: "We're investigating this issue right now.",
-                    createdAt: new Date("2024-01-28T01:34:00+06:00"),
+                    createdAt: new Date("2024-01-28T01:34:00+06:00").toString(),
                 },
                 {
                     type: IncidentEventType.Resolved,
                     description: "This incident has been resolved.",
-                    createdAt: new Date("2024-01-28T02:12:00+06:00"),
+                    createdAt: new Date("2024-01-28T02:12:00+06:00").toString(),
                 },
             ],
-            createdAt: new Date("2024-01-28T01:34:00+06:00"),
+            createdAt: new Date("2024-01-28T01:34:00+06:00").toString(),
         },
     ] satisfies Incident[],
 };

@@ -11,7 +11,8 @@ interface PastIncidentsProps {
 
 const PastIncidents: FC<PastIncidentsProps> = ({ incidents }) => {
     const sortedIncidents = [...incidents].sort(
-        (a, b) => b.createdAt.getTime() - a.createdAt.getTime()
+        (a, b) =>
+            new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
     );
     const groupedIncidentsObject = groupBy(sortedIncidents, (incident) =>
         format(incident.createdAt, "MMM d, y")
@@ -23,9 +24,9 @@ const PastIncidents: FC<PastIncidentsProps> = ({ incidents }) => {
             i <
             Math.ceil(
                 (Date.now() -
-                    sortedIncidents[
-                        sortedIncidents.length - 1
-                    ].createdAt.getTime()) /
+                    new Date(
+                        sortedIncidents[sortedIncidents.length - 1].createdAt
+                    ).getTime()) /
                     (1000 * 60 * 60 * 24)
             ) +
                 2;

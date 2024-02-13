@@ -18,7 +18,7 @@ const IncidentBriefEventInfo: FC<IncidentBriefEventInfoProps> = ({ event }) => {
             </p>
             <span className="text-gray-600 dark:text-gray-400">
                 <ViewDate
-                    date={event.createdAt}
+                    date={new Date(event.createdAt)}
                     formatSpecifier="MMM d, H:ii OOOO"
                 />
             </span>

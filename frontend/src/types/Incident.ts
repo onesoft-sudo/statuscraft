@@ -21,6 +21,6 @@ export type Incident = {
     title: string;
     resolved: boolean;
     events: IncidentEvent[];
-    createdAt: Date;
+    createdAt: string;
     highestServiceStatus?: ServiceStatus;
 };
