@@ -16,7 +16,7 @@ const ViewDate: FC<ViewDateProps> = ({
     transform,
     addSuffix = true,
     distanceFromNow = false,
-    formatSpecifier = "MMM d, y H:ii OOOO",
+    formatSpecifier = "MMM d, y H:mm OOOO",
 }) => {
     if (transform) {
         return transform(date);

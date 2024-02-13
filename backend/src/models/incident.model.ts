@@ -5,11 +5,14 @@ import {
     Entity,
     ManyToMany,
     ManyToOne,
+    OneToMany,
     PrimaryGeneratedColumn,
     UpdateDateColumn,
 } from "typeorm";
 import Service from "./service.model";
 import User from "./user.model";
+import { Event } from "./event.model";
+import { ServiceStatus } from "src/types/ServiceStatus";
 
 @Entity()
 export default class Incident extends BaseEntity {
@@ -23,7 +26,7 @@ export default class Incident extends BaseEntity {
 
     @Column({
         type: "text",
-        nullable: true
+        nullable: true,
     })
     description?: string;
 
@@ -39,6 +42,20 @@ export default class Incident extends BaseEntity {
         cascade: ["remove"],
     })
     services: Service[];
+
+    @Column({
+        type: "enum",
+        enum: ServiceStatus,
+        enumName: "incident_service_status",
+        array: true,
+        default: [],
+    })
+    serviceStatuses: ServiceStatus[];
+
+    @OneToMany(() => Event, (event) => event.incident, {
+        cascade: ["remove"],
+    })
+    events: Event[];
 
     @CreateDateColumn({
         name: "created_at",

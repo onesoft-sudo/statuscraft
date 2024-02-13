@@ -8,7 +8,7 @@ interface IncidentEventListProps {
 
 const IncidentEventList: FC<IncidentEventListProps> = ({ events }) => {
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 mx-3">
             {events.map((event) => (
                 <IncidentEventInfo key={event.type} event={event} />
             ))}

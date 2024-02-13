@@ -2,7 +2,7 @@
 
 import { useIsDesktop } from "@/hooks/useDeviceType";
 import { useState } from "react";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdSearch } from "react-icons/md";
 import IconButton from "../Buttons/IconButton";
 import Brand from "./Brand";
 import Buttons from "./Buttons";
@@ -27,7 +27,14 @@ const Navbar = () => {
                 <Brand />
                 {isDesktop && <Links />}
                 {isDesktop && <Buttons />}
-                {!isDesktop && <div></div>}
+                {!isDesktop && (
+                    <IconButton
+                        className="place-self-start text-gray-500 dark:text-white"
+                        onClick={() => setDrawerOpen(true)}
+                    >
+                        <MdSearch size="1.4rem" />
+                    </IconButton>
+                )}
             </nav>
             {!isDesktop && drawerOpen && (
                 <div

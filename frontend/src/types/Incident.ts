@@ -14,7 +14,7 @@ export type IncidentEventType =
 export type IncidentEvent = {
     type: IncidentEventType;
     description: string;
-    createdAt: Date;
+    createdAt: string;
 };
 
 export type Incident = {

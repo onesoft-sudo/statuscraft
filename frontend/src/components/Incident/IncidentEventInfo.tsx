@@ -9,9 +9,10 @@ interface IncidentEventInfoProps {
 
 const IncidentEventInfo: FC<IncidentEventInfoProps> = ({ event }) => {
     const [name, Icon] = getEventTypeInfo(event.type);
+    const createdAt = new Date(event.createdAt);
 
     return (
-        <div className="grid grid-cols-[2fr_5fr] gap-10 max-w-[99svw] lg:max-w-[75svw] xl:max-w-[65svw]">
+        <div className="grid md:grid-cols-[2fr_5fr] gap-3 md:gap-10 max-w-[99svw] lg:max-w-[75svw] xl:max-w-[65svw]">
             <div>
                 <h2
                     className={`text-xl lg:text-2xl flex gap-2 items-center ${
@@ -28,8 +29,8 @@ const IncidentEventInfo: FC<IncidentEventInfoProps> = ({ event }) => {
             <div>
                 <p>{event.description}</p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                    <ViewDate date={event.createdAt} distanceFromNow />
-                    , <ViewDate date={event.createdAt} />
+                    <ViewDate date={createdAt} distanceFromNow />,{" "}
+                    <ViewDate date={createdAt} />
                 </p>
             </div>
         </div>
