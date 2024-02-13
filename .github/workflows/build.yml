@@ -22,26 +22,20 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
 
-            - name: "Switch Directory to frontend/"
-              run: cd frontend
+            - name: "Install Dependencies (Frontend)"
+              run: cd frontend && npm install
 
-            - name: "Install Dependencies"
-              run: npm install
+            - name: "Install Dev Dependencies (Frontend)"
+              run: cd frontend && npm install -D
 
-            - name: "Install Dev Dependencies"
-              run: npm install -D
+            - name: "Build (Frontend)"
+              run: cd frontend && npm run build
 
-            - name: "Build"
-              run: npm run build
-              
-            - name: "Switch Directory to backend/"
-              run: cd ../backend
+            - name: "Install Dependencies (Backend)"
+              run: cd backend && npm install
 
-            - name: "Install Dependencies"
-              run: npm install
+            - name: "Install Dev Dependencies (Backend)"
+              run: cd backend && npm install -D
 
-            - name: "Install Dev Dependencies"
-              run: npm install -D
-
-            - name: "Build"
-              run: npm run build
+            - name: "Build (Backend)"
+              run: cd backend && npm run build
