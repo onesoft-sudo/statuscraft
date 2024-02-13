@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.4.0...v0.5.0) (2024-02-13)
+
+
+### Features
+
+* dynamic incident view page ([b92f573](https://github.com/onesoft-sudo/statuscraft/commit/b92f573db4c356c82a0cd3e4c02dbd87b52de094))
+
+
+
 # [0.4.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.3.0...v0.4.0) (2024-02-01)
 
 
