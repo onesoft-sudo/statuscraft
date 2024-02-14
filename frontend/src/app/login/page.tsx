@@ -8,11 +8,15 @@ export const metadata: Metadata = {
 const LoginPage = () => {
     return (
         <main className="py-5 lg:py-10 bg-gray-50 dark:bg-transparent h-[100%] w-[100svw]">
-            <h1 className="text-2xl md:text-3xl lg:text-4xl text-center">
-                Login
-            </h1>
+            <div className="flex justify-center items-center min-h-[65vh]">
+                <div>
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl text-center pb-10">
+                        Login
+                    </h1>
 
-            <LoginForm />
+                    <LoginForm />
+                </div>
+            </div>
         </main>
     );
 };
