@@ -66,24 +66,18 @@ const IncidentPage: FC<ServerSidePageProps> = async ({ params }) => {
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-center">
                 {data.title}
             </h1>
-            <h6 className="text-sm text-gray-500 dark:text-gray-400 text-center mt-2">
+            <h6 className="text-sm text-gray-500 dark:text-gray-400 text-center mt-2 pb-3 md:pb-4">
                 Reported{" "}
                 <ViewDate date={new Date(data.createdAt)} distanceFromNow />,{" "}
                 <ViewDate date={new Date(data.createdAt)} />
             </h6>
-
-            <br />
-            <br />
 
             <AffectedServices
                 services={data.services}
                 statuses={data.serviceStatuses}
             />
 
-            <br />
-            <br />
-
-            <div>
+            <div className="pt-3 md:pt-4">
                 <IncidentEventList events={data.events} />
                 <div className="absolute md:static bottom-5 left-0 w-[100svw] px-5 md:w-auto md:px-0">
                     <Divider className="mt-6 mb-3" />
