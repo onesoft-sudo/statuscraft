@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.5.4...v0.6.0) (2024-02-14)
+
+
+### Features
+
+* revamped login form ([861ad6d](https://github.com/onesoft-sudo/statuscraft/commit/861ad6dc2eaa07b956b87a07d860138fde7720ed))
+
+
+
 ## [0.5.4](https://github.com/onesoft-sudo/statuscraft/compare/v0.5.3...v0.5.4) (2024-02-14)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * type errors ([81604ea](https://github.com/onesoft-sudo/statuscraft/commit/81604ea452081e2b9a1d40fddc6f6d437f30da25))
-
-
-
-# [0.5.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.4.0...v0.5.0) (2024-02-13)
-
-
-### Features
-
-* dynamic incident view page ([b92f573](https://github.com/onesoft-sudo/statuscraft/commit/b92f573db4c356c82a0cd3e4c02dbd87b52de094))
 
 
 
