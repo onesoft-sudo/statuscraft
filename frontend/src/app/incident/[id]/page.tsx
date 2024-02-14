@@ -79,7 +79,7 @@ const IncidentPage: FC<ServerSidePageProps> = async ({ params }) => {
 
             <div className="pt-3 md:pt-4">
                 <IncidentEventList events={data.events} />
-                <div className="absolute md:static bottom-5 left-0 w-[100svw] px-5 md:w-auto md:px-0">
+                <div>
                     <Divider className="mt-6 mb-3" />
                     <div className="flex justify-between items-center mt-auto">
                         <Link
