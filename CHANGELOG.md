@@ -1,3 +1,12 @@
+## [0.5.2](https://github.com/onesoft-sudo/statuscraft/compare/v0.5.1...v0.5.2) (2024-02-14)
+
+
+### Bug Fixes
+
+* use padding instead of <br /> tags ([da634c1](https://github.com/onesoft-sudo/statuscraft/commit/da634c1a0ac38f4dc0905522152fedc47aba67dd))
+
+
+
 ## [0.5.1](https://github.com/onesoft-sudo/statuscraft/compare/v0.5.0...v0.5.1) (2024-02-13)
 
 
@@ -32,15 +41,6 @@
 
 * add redux ([a0cfbfb](https://github.com/onesoft-sudo/statuscraft/commit/a0cfbfbd26813be13f0c344914266b4779518fa4))
 * add redux ([d2ed861](https://github.com/onesoft-sudo/statuscraft/commit/d2ed861565fa874ddd75a85e6660a0e0d42c8d79))
-
-
-
-# [0.2.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.1.0...v0.2.0) (2024-02-01)
-
-
-### Features
-
-* authentication ([82f21b5](https://github.com/onesoft-sudo/statuscraft/commit/82f21b54b8af9df861a57f166b2dcd3de3b02dbb))
 
 
 
