@@ -1,3 +1,12 @@
+## [0.5.3](https://github.com/onesoft-sudo/statuscraft/compare/v0.5.2...v0.5.3) (2024-02-14)
+
+
+### Bug Fixes
+
+* spacing ([f691991](https://github.com/onesoft-sudo/statuscraft/commit/f691991ba9eb8f2d92b2a4545c3d7d5700a4425b))
+
+
+
 ## [0.5.2](https://github.com/onesoft-sudo/statuscraft/compare/v0.5.1...v0.5.2) (2024-02-14)
 
 
@@ -31,16 +40,6 @@
 ### Features
 
 * add redux ([2d14586](https://github.com/onesoft-sudo/statuscraft/commit/2d145869776a07d7d313e45b77f34d7f200f3413))
-
-
-
-# [0.3.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.2.0...v0.3.0) (2024-02-01)
-
-
-### Features
-
-* add redux ([a0cfbfb](https://github.com/onesoft-sudo/statuscraft/commit/a0cfbfbd26813be13f0c344914266b4779518fa4))
-* add redux ([d2ed861](https://github.com/onesoft-sudo/statuscraft/commit/d2ed861565fa874ddd75a85e6660a0e0d42c8d79))
 
 
 
