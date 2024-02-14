@@ -1,5 +1,6 @@
 import AffectedServices from "@/components/Incident/AffectedServices";
 import IncidentEventList from "@/components/Incident/IncidentEventList";
+import OrganizationInfo from "@/components/Incident/OrganizationInfo";
 import Divider from "@/components/Utils/Divider";
 import ViewDate from "@/components/Utils/ViewDate";
 import { IncidentEventType } from "@/types/Incident";
@@ -59,27 +60,31 @@ const IncidentPage: FC<ServerSidePageProps> = async ({ params }) => {
         notFound();
     }
 
-    console.log(data);
+    const organization = data.services[0].organization;
 
     return (
         <main className="px-3 md:px-0 pt-7 lg:pt-10 flex justify-center flex-col items-center">
             <h1 className="text-2xl md:text-3xl lg:text-4xl text-center">
                 {data.title}
             </h1>
-            <h6 className="text-sm text-gray-500 dark:text-gray-400 text-center mt-2 pb-3 md:pb-4">
+            <h6 className="text-sm text-gray-500 dark:text-gray-400 text-center mt-2 pb-2">
                 Reported{" "}
                 <ViewDate date={new Date(data.createdAt)} distanceFromNow />,{" "}
                 <ViewDate date={new Date(data.createdAt)} />
             </h6>
+
+            <OrganizationInfo organization={organization} />
+
+            <div className="pb-3 pt-2"></div>
 
             <AffectedServices
                 services={data.services}
                 statuses={data.serviceStatuses}
             />
 
-            <div className="pt-3 md:pt-4">
+            <div className="pt-8 pb-4">
                 <IncidentEventList events={data.events} />
-                <div>
+                <div className=" px-2 md:px-0">
                     <Divider className="mt-6 mb-3" />
                     <div className="flex justify-between items-center mt-auto">
                         <Link

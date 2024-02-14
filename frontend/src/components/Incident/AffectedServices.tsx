@@ -13,7 +13,7 @@ const AffectedServices: FC<AffectedServicesProps> = ({
 }) => {
     return (
         <div className="flex justify-center flex-col items-center">
-            <h5 className="uppercase mb-5 text-sm text-gray-600 dark:text-gray-300 font-bold">
+            <h5 className="uppercase mb-3 text-sm text-gray-600 dark:text-gray-300 font-bold">
                 Affected Services
             </h5>
 
