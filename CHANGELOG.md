@@ -1,3 +1,12 @@
+## [0.5.4](https://github.com/onesoft-sudo/statuscraft/compare/v0.5.3...v0.5.4) (2024-02-14)
+
+
+### Bug Fixes
+
+* final fixup for the incident view page ([f66c6e8](https://github.com/onesoft-sudo/statuscraft/commit/f66c6e8206d21cca2c0d2a78b700bab21fb00832))
+
+
+
 ## [0.5.3](https://github.com/onesoft-sudo/statuscraft/compare/v0.5.2...v0.5.3) (2024-02-14)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * dynamic incident view page ([b92f573](https://github.com/onesoft-sudo/statuscraft/commit/b92f573db4c356c82a0cd3e4c02dbd87b52de094))
-
-
-
-# [0.4.0](https://github.com/onesoft-sudo/statuscraft/compare/v0.3.0...v0.4.0) (2024-02-01)
-
-
-### Features
-
-* add redux ([2d14586](https://github.com/onesoft-sudo/statuscraft/commit/2d145869776a07d7d313e45b77f34d7f200f3413))
 
 
 
